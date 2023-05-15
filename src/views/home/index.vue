@@ -5,7 +5,7 @@
         <img src="../../assets/images/music.png" />
       </div>
     </div>
-    <audio preload autoplay loop id="vd">
+    <audio autoplay loop id="vd">
       <source src="../../assets/test.mp3" type="audio/mpeg" />
     </audio>
     <div
@@ -851,6 +851,7 @@
   }
   .scroll {
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   .back {
     position: absolute;
@@ -1270,7 +1271,7 @@
     flex: 1;
     position: relative;
     > .page-child {
-      background-size: cover;
+      background-size: 100% 100%;
       flex: 1;
       position: relative;
       width: 100%;
@@ -1278,6 +1279,7 @@
     }
     img {
       width: 100%;
+      height: 100%;
     }
     .jump-box {
       position: absolute;
